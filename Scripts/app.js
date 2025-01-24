@@ -49,6 +49,10 @@ const NumberReverseItUserField = document.getElementById("NumberReverseItUserFie
 const NumberReverseItGoBtn = document.getElementById("NumberReverseItGoBtn");
 const NumberReverseItText = document.getElementById("NumberReverseItText");
 
+const AlphnumericReverseItUserField = document.getElementById("AlphnumericReverseItUserField");
+const AlphnumericReverseItGoBtn = document.getElementById("AlphnumericReverseItGoBtn");
+const AlphnumericReverseItText = document.getElementById("AlphnumericReverseItText");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
@@ -68,6 +72,7 @@ let madLibAction;
 let madLibJob;
 let madLibStructure;
 let reverseItNum;
+let reverseItString;
 let restaurantChoice;
 
 
@@ -162,6 +167,21 @@ let restaurantChoice;
 //     console.log(data);
 //     return data;
 // }
+
+
+// AlphnumericReverseItGoBtn.addEventListener('click', async () => {
+//     reverseItString = AlphnumericReverseItUserField.value;
+//     ReverseItAlphnumeric(reverseItString);
+//     AlphnumericReverseItText.innerText = await ReverseItAlphnumeric(reverseItString);
+// })
+
+// const ReverseItAlphnumeric = async (reverseItString) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/StringReverse/ReverseIt/${reverseItString}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
+
 
 
 
