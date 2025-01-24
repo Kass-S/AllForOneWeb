@@ -617,6 +617,12 @@
   .bg-\[url\(\/Assets\/AllForOneMadlibjpg\)\] {
     background-image: url(/Assets/AllForOneMadlibjpg);
   }
+  .bg-\[url\(\/Assets\/AllForOneMagic\.jpg\)\] {
+    background-image: url(/Assets/AllForOneMagic.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneMagicjpg\)\] {
+    background-image: url(/Assets/AllForOneMagicjpg);
+  }
   .bg-\[url\(\/Assets\/AllForOneOdd\.jpg\)\] {
     background-image: url(/Assets/AllForOneOdd.jpg);
   }

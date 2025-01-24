@@ -58,6 +58,10 @@ const GreaterLessUserField2 = document.getElementById("GreaterLessUserField2");
 const GreaterLessGoBtn = document.getElementById("GreaterLessGoBtn");
 const GreaterLessText = document.getElementById("GreaterLessText");
 
+const Magic8UserField = document.getElementById("Magic8UserField");
+const Magic8GoBtn = document.getElementById("Magic8GoBtn");
+const Magic8Text = document.getElementById("Magic8Text");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
@@ -80,12 +84,12 @@ let reverseItNum;
 let reverseItString;
 let greaterLessNum1;
 let greaterLessNum2;
+let magic8Input;
 let restaurantChoice;
 
 
 // SayHelloGoBtn.addEventListener('click', async () => {
 //     helloName = SayHelloUserField.value;
-//     SayHello(helloName);
 //     SayHelloText.innerText = await SayHello(helloName);
 // })
 
@@ -100,7 +104,6 @@ let restaurantChoice;
 // AddNumbersGoBtn.addEventListener('click', async () => {
 //     addNum1 = AddNumbersUserField1.value;
 //     addNum2 = AddNumbersUserField2.value;
-//     Add2Numbers(addNum1, addNum2)
 //     AddNumbersText.innerText = await Add2Numbers(addNum1, addNum2);
 // })
 
@@ -115,7 +118,6 @@ let restaurantChoice;
 // AskingQuestionsGoBtn.addEventListener('click', async () => {
 //     nameQuestion = NameQuestionUserField.value;
 //     timeQuestion = TimeQuestionUserField.value;
-//     AskingQuestions(nameQuestion, timeQuestion);
 //     AskingQuestionsText.innerText = await AskingQuestions(nameQuestion, timeQuestion);
 // })
 
@@ -129,7 +131,6 @@ let restaurantChoice;
 
 // OddEvenGoBtn.addEventListener('click', async () => {
 //     oddEvenInput = OddEvenUserField.value;
-//     OddOrEven(oddEvenInput);
 //     OddEvenText.innerText = await OddOrEven(oddEvenInput);
 // })
 
@@ -150,7 +151,6 @@ let restaurantChoice;
 //     madLibAction = MadLibActionUserField.value;
 //     madLibJob = MadLibJobUserField.value;
 //     madLibStructure = MadLibStructureUserField.value;
-//     MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
 //     MadLibText.innerText = await MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
 // })
 
@@ -164,7 +164,6 @@ let restaurantChoice;
 
 // NumberReverseItGoBtn.addEventListener('click', async () => {
 //     reverseItNum = NumberReverseItUserField.value;
-//     ReverseItNumber(reverseItNum);
 //     NumberReverseItText.innerText = await ReverseItNumber(reverseItNum);
 // })
 
@@ -178,7 +177,6 @@ let restaurantChoice;
 
 // AlphnumericReverseItGoBtn.addEventListener('click', async () => {
 //     reverseItString = AlphnumericReverseItUserField.value;
-//     ReverseItAlphnumeric(reverseItString);
 //     AlphnumericReverseItText.innerText = await ReverseItAlphnumeric(reverseItString);
 // })
 
@@ -193,7 +191,6 @@ let restaurantChoice;
 // GreaterLessGoBtn.addEventListener('click', async () => {
 //     greaterLessNum1 = GreaterLessUserField1.value;
 //     greaterLessNum2 = GreaterLessUserField2.value;
-//     GreaterLessThan(greaterLessNum1, greaterLessNum2)
 //     GreaterLessText.innerText = await GreaterLessThan(greaterLessNum1, greaterLessNum2);
 // })
 
@@ -205,7 +202,17 @@ let restaurantChoice;
 // }
 
 
+Magic8GoBtn.addEventListener('click', async () => {
+    magic8Input = Magic8UserField.value;
+    Magic8Text.innerText = await Magic8Ball(magic8Input);
+})
 
+const Magic8Ball = async (magic8Input) => {
+    const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/Magic8Ball/Magic8/${magic8Input}`);
+    const data = await promise.text();
+    console.log(data);
+    return data;
+}
 
 
 
