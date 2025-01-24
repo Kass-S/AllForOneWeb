@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Irish Grover";
+    src: url(../Assets/Fonts/IrishGrover-Regular.ttf);
+}
+@theme{
+    --font-irish: "Irish Grover", Arial, Helvetica, sans-serif;
+}
