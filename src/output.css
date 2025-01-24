@@ -523,84 +523,56 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
+  .col-\[2\] {
+    grid-column: 2;
   }
-  .relative {
-    position: relative;
+  .mx-20 {
+    margin-inline: calc(var(--spacing) * 20);
+  }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
-  .inline-flex {
-    display: inline-flex;
+  .grid {
+    display: grid;
   }
-  .list-item {
-    display: list-item;
+  .hidden {
+    display: none;
   }
-  .table {
-    display: table;
-  }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .resize {
-    resize: both;
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .justify-center {
     justify-content: center;
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
+  .gap-x-30 {
+    column-gap: calc(var(--spacing) * 30);
+  }
+  .bg-green-600\/90 {
+    background-color: color-mix(in oklab, var(--color-green-600) 90%, transparent);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/70 {
+    background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
+  }
   .bg-\[url\(\.\.\/Assets\/AllForOneReverseIt\.jpg\)\] {
     background-image: url(../Assets/AllForOneReverseIt.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOne\.jpg\)\] {
-    background-image: url(/Assets/AllForOne.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneA\.jpg\)\] {
-    background-image: url(/Assets/AllForOneA.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneAdd\.jpg\)\] {
-    background-image: url(/Assets/AllForOneAdd.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneAdd2\.jpg\)\] {
-    background-image: url(/Assets/AllForOneAdd2.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneAdd2Num\.jpg\)\] {
-    background-image: url(/Assets/AllForOneAdd2Num.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneAdd2Nums\.jpg\)\] {
     background-image: url(/Assets/AllForOneAdd2Nums.jpg);
   }
-  .bg-\[url\(\/Assets\/AllForOneAsking\.jpg\)\] {
-    background-image: url(/Assets/AllForOneAsking.jpg);
-  }
   .bg-\[url\(\/Assets\/AllForOneAskingQuestions\.jpg\)\] {
     background-image: url(/Assets/AllForOneAskingQuestions.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneGuess\.jpg\)\] {
-    background-image: url(/Assets/AllForOneGuess.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneGuessIt\.jpg\)\] {
     background-image: url(/Assets/AllForOneGuessIt.jpg);
@@ -608,23 +580,11 @@
   .bg-\[url\(\/Assets\/AllForOneHome\.jpg\)\] {
     background-image: url(/Assets/AllForOneHome.jpg);
   }
-  .bg-\[url\(\/Assets\/AllForOneMadLibjpg\)\] {
-    background-image: url(/Assets/AllForOneMadLibjpg);
-  }
   .bg-\[url\(\/Assets\/AllForOneMadlib\.jpg\)\] {
     background-image: url(/Assets/AllForOneMadlib.jpg);
   }
-  .bg-\[url\(\/Assets\/AllForOneMadlibjpg\)\] {
-    background-image: url(/Assets/AllForOneMadlibjpg);
-  }
   .bg-\[url\(\/Assets\/AllForOneMagic\.jpg\)\] {
     background-image: url(/Assets/AllForOneMagic.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneMagicjpg\)\] {
-    background-image: url(/Assets/AllForOneMagicjpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneOdd\.jpg\)\] {
-    background-image: url(/Assets/AllForOneOdd.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneOddEven\.jpg\)\] {
     background-image: url(/Assets/AllForOneOddEven.jpg);
@@ -635,20 +595,8 @@
   .bg-\[url\(\/Assets\/AllForOneReverseIt\.jpg\)\] {
     background-image: url(/Assets/AllForOneReverseIt.jpg);
   }
-  .bg-\[url\(\/Assets\/AllForOneSay\.jpg\)\] {
-    background-image: url(/Assets/AllForOneSay.jpg);
-  }
   .bg-\[url\(\/Assets\/AllForOneSayHello\.jpg\)\] {
     background-image: url(/Assets/AllForOneSayHello.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneSe\.jpg\)\] {
-    background-image: url(/Assets/AllForOneSe.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOneguess\.jpg\)\] {
-    background-image: url(/Assets/AllForOneguess.jpg);
-  }
-  .bg-\[url\(\/Assets\/AllForOnejpg\)\] {
-    background-image: url(/Assets/AllForOnejpg);
   }
   .bg-cover {
     background-size: cover;
@@ -656,8 +604,8 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
+  .align-middle {
+    vertical-align: middle;
   }
   .font-inder {
     font-family: var(--font-inder);
@@ -673,25 +621,13 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-9xl {
     font-size: var(--text-9xl);
     line-height: var(--tw-leading, var(--text-9xl--line-height));
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .opacity-1 {
-    opacity: 1%;
-  }
-  .opacity-70 {
-    opacity: 70%;
-  }
-  .opacity-100 {
-    opacity: 100%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
 }
 @font-face {
@@ -727,39 +663,4 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }

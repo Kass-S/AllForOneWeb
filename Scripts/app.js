@@ -1,6 +1,4 @@
 
-
-
 const TitleText = document.getElementById("TitleText");
 const PlayBtn = document.getElementById("PlayBtn");
 const BackBtnHome = document.getElementById("BackBtnHome");
@@ -86,6 +84,11 @@ let greaterLessNum1;
 let greaterLessNum2;
 let magic8Input;
 let restaurantChoice;
+
+
+PlayBtn.addEventListener('click', () => {
+    
+})
 
 
 // SayHelloGoBtn.addEventListener('click', async () => {
@@ -202,18 +205,17 @@ let restaurantChoice;
 // }
 
 
-Magic8GoBtn.addEventListener('click', async () => {
-    magic8Input = Magic8UserField.value;
-    Magic8Text.innerText = await Magic8Ball(magic8Input);
-})
+// Magic8GoBtn.addEventListener('click', async () => {
+//     magic8Input = Magic8UserField.value;
+//     Magic8Text.innerText = await Magic8Ball(magic8Input);
+// })
 
-const Magic8Ball = async (magic8Input) => {
-    const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/Magic8Ball/Magic8/${magic8Input}`);
-    const data = await promise.text();
-    console.log(data);
-    return data;
-}
-
+// const Magic8Ball = async (magic8Input) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/Magic8Ball/Magic8/${magic8Input}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
 
 
 //change these to async when you get the chance to alter the inner text
