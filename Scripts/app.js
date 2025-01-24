@@ -16,3 +16,32 @@ const GreaterLessPathBtn = document.getElementById("GreaterLessPathBtn");
 const Magic8BallPathBtn = document.getElementById("Magic8BallPathBtn");
 const RestaurantPickerPathBtn = document.getElementById("RestaurantPickerPathBtn");
 
+const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
+const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
+const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
+
+let restaurantChoice = 'default';
+
+const SayHello = async (sayHelloName) => {
+    const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/SayHello/SayHello/${sayHelloName}`);
+    const data = await promise.text();
+    console.log(data);
+}
+
+
+RestaurantFastFoodBtn.addEventListener('click', () => {
+   RestaurantPicker('fast food');
+})
+RestaurantPizzaBtn.addEventListener('click', () => {
+    RestaurantPicker('pizza');
+})
+RestaurantFoodTruckBtn.addEventListener('click', () => {
+    RestaurantPicker('food truck');
+})
+
+const RestaurantPicker = async (restaurantChoice) => {
+    let promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/RestaurantPicker/Pick/${restaurantChoice}`);
+    let data = await promise.text();
+    console.log(data);
+    return data;
+}
