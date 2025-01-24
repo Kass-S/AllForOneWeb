@@ -30,14 +30,21 @@ const TimeQuestionUserField = document.getElementById("TimeQuestionUserField");
 const AskingQuestionsGoBtn = document.getElementById("AskingQuestionsGoBtn");
 const AskingQuestionsText = document.getElementById("AskingQuestionsText");
 
+const OddEvenUserField = document.getElementById("OddEvenUserField");
+const OddEvenGoBtn = document.getElementById("OddEvenGoBtn");
+const OddEvenText = document.getElementById("OddEvenText");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
 
-let helloName = 'default';
+let helloName;
 let addNum1;
 let addNum2;
-let restaurantChoice = 'default';
+let nameQuestion;
+let timeQuestion;
+let oddEvenInput = 'default';
+let restaurantChoice;
 
 
 // SayHelloGoBtn.addEventListener('click', async () => {
@@ -63,6 +70,35 @@ let restaurantChoice = 'default';
 
 // const Add2Numbers = async (num1, num2) => {
 //     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/Add2Num/Add/${num1}/${num2}`)
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
+
+
+// AskingQuestionsGoBtn.addEventListener('click', async () => {
+//     nameQuestion = NameQuestionUserField.value;
+//     timeQuestion = TimeQuestionUserField.value;
+//     AskingQuestions(nameQuestion, timeQuestion);
+//     AskingQuestionsText.innerText = await AskingQuestions(nameQuestion, timeQuestion);
+// })
+
+// const AskingQuestions = async (question1, question2) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/AskingQuestions/Asking/${question1}/${question2}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
+
+
+// OddEvenGoBtn.addEventListener('click', async () => {
+//     oddEvenInput = OddEvenUserField.value;
+//     OddOrEven(oddEvenInput);
+//     OddEvenText.innerText = await OddOrEven(oddEvenInput);
+// })
+
+// const OddOrEven = async (oddEvenInput) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/OddEven/OddEvenAnswer/${oddEvenInput}`);
 //     const data = await promise.text();
 //     console.log(data);
 //     return data;

@@ -599,8 +599,20 @@
   .bg-\[url\(\/Assets\/AllForOneAskingQuestions\.jpg\)\] {
     background-image: url(/Assets/AllForOneAskingQuestions.jpg);
   }
+  .bg-\[url\(\/Assets\/AllForOneGuess\.jpg\)\] {
+    background-image: url(/Assets/AllForOneGuess.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneGuessIt\.jpg\)\] {
+    background-image: url(/Assets/AllForOneGuessIt.jpg);
+  }
   .bg-\[url\(\/Assets\/AllForOneHome\.jpg\)\] {
     background-image: url(/Assets/AllForOneHome.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneOdd\.jpg\)\] {
+    background-image: url(/Assets/AllForOneOdd.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneOddEven\.jpg\)\] {
+    background-image: url(/Assets/AllForOneOddEven.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneRestaurant\.jpg\)\] {
     background-image: url(/Assets/AllForOneRestaurant.jpg);
@@ -613,6 +625,9 @@
   }
   .bg-\[url\(\/Assets\/AllForOneSe\.jpg\)\] {
     background-image: url(/Assets/AllForOneSe.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneguess\.jpg\)\] {
+    background-image: url(/Assets/AllForOneguess.jpg);
   }
   .bg-cover {
     background-size: cover;
