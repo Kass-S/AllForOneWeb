@@ -53,6 +53,11 @@ const AlphnumericReverseItUserField = document.getElementById("AlphnumericRevers
 const AlphnumericReverseItGoBtn = document.getElementById("AlphnumericReverseItGoBtn");
 const AlphnumericReverseItText = document.getElementById("AlphnumericReverseItText");
 
+const GreaterLessUserField1 = document.getElementById("GreaterLessUserField1");
+const GreaterLessUserField2 = document.getElementById("GreaterLessUserField2");
+const GreaterLessGoBtn = document.getElementById("GreaterLessGoBtn");
+const GreaterLessText = document.getElementById("GreaterLessText");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
@@ -73,6 +78,8 @@ let madLibJob;
 let madLibStructure;
 let reverseItNum;
 let reverseItString;
+let greaterLessNum1;
+let greaterLessNum2;
 let restaurantChoice;
 
 
@@ -177,6 +184,21 @@ let restaurantChoice;
 
 // const ReverseItAlphnumeric = async (reverseItString) => {
 //     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/StringReverse/ReverseIt/${reverseItString}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
+
+
+// GreaterLessGoBtn.addEventListener('click', async () => {
+//     greaterLessNum1 = GreaterLessUserField1.value;
+//     greaterLessNum2 = GreaterLessUserField2.value;
+//     GreaterLessThan(greaterLessNum1, greaterLessNum2)
+//     GreaterLessText.innerText = await GreaterLessThan(greaterLessNum1, greaterLessNum2);
+// })
+
+// const GreaterLessThan = async (greaterLessNum1, greaterLessNum2) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/GreaterLess/GreaterLessThan/${greaterLessNum1}/${greaterLessNum2}`)
 //     const data = await promise.text();
 //     console.log(data);
 //     return data;
