@@ -566,14 +566,53 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-\[url\(\.\.\/Assets\/AllForOneReverseIt\.jpg\)\] {
     background-image: url(../Assets/AllForOneReverseIt.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOne\.jpg\)\] {
+    background-image: url(/Assets/AllForOne.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneA\.jpg\)\] {
+    background-image: url(/Assets/AllForOneA.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAdd\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAdd.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAdd2\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAdd2.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAdd2Num\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAdd2Num.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAdd2Nums\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAdd2Nums.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAsking\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAsking.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneAskingQuestions\.jpg\)\] {
+    background-image: url(/Assets/AllForOneAskingQuestions.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneHome\.jpg\)\] {
     background-image: url(/Assets/AllForOneHome.jpg);
   }
   .bg-\[url\(\/Assets\/AllForOneRestaurant\.jpg\)\] {
     background-image: url(/Assets/AllForOneRestaurant.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneSay\.jpg\)\] {
+    background-image: url(/Assets/AllForOneSay.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneSayHello\.jpg\)\] {
+    background-image: url(/Assets/AllForOneSayHello.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneSe\.jpg\)\] {
+    background-image: url(/Assets/AllForOneSe.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -584,8 +623,19 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .font-inder {
+    font-family: var(--font-inder);
+  }
   .font-irish {
     font-family: var(--font-irish);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-9xl {
     font-size: var(--text-9xl);
@@ -593,6 +643,15 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-1 {
+    opacity: 1%;
+  }
+  .opacity-70 {
+    opacity: 70%;
+  }
+  .opacity-100 {
+    opacity: 100%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
