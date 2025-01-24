@@ -626,6 +626,9 @@
   .bg-\[url\(\/Assets\/AllForOneRestaurant\.jpg\)\] {
     background-image: url(/Assets/AllForOneRestaurant.jpg);
   }
+  .bg-\[url\(\/Assets\/AllForOneReverseIt\.jpg\)\] {
+    background-image: url(/Assets/AllForOneReverseIt.jpg);
+  }
   .bg-\[url\(\/Assets\/AllForOneSay\.jpg\)\] {
     background-image: url(/Assets/AllForOneSay.jpg);
   }

@@ -45,6 +45,10 @@ const MadLibStructureUserField = document.getElementById("MadLibStructureUserFie
 const MadLibGoBtn = document.getElementById("MadLibGoBtn");
 const MadLibText = document.getElementById("MadLibText");
 
+const NumberReverseItUserField = document.getElementById("NumberReverseItUserField");
+const NumberReverseItGoBtn = document.getElementById("NumberReverseItGoBtn");
+const NumberReverseItText = document.getElementById("NumberReverseItText");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
@@ -63,6 +67,7 @@ let madLibEmotion;
 let madLibAction;
 let madLibJob;
 let madLibStructure;
+let reverseItNum;
 let restaurantChoice;
 
 
@@ -124,28 +129,45 @@ let restaurantChoice;
 // }
 
 
-MadLibGoBtn.addEventListener('click', async () => {
-    madLibNoun = MadLibNounUserField.value;
-    madLibAnimal = MadLibAnimalUserField.value;
-    madLibName = MadLibNameUserField.value;
-    madLibDifferentName = MadLibDifferentNameUserField.value;
-    madLibEmotion = MadLibEmotionUserField.value;
-    madLibAction = MadLibActionUserField.value;
-    madLibJob = MadLibJobUserField.value;
-    madLibStructure = MadLibStructureUserField.value;
-    MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
-    MadLibText.innerText = await MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
-})
+// MadLibGoBtn.addEventListener('click', async () => {
+//     madLibNoun = MadLibNounUserField.value;
+//     madLibAnimal = MadLibAnimalUserField.value;
+//     madLibName = MadLibNameUserField.value;
+//     madLibDifferentName = MadLibDifferentNameUserField.value;
+//     madLibEmotion = MadLibEmotionUserField.value;
+//     madLibAction = MadLibActionUserField.value;
+//     madLibJob = MadLibJobUserField.value;
+//     madLibStructure = MadLibStructureUserField.value;
+//     MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
+//     MadLibText.innerText = await MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
+// })
 
-const MadLib = async (madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure) => {
-    const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/MadLib/MadLibStory/${madLibNoun}/${madLibAnimal}/${madLibName}/${madLibDifferentName}/${madLibEmotion}/${madLibAction}/${madLibJob}/${madLibStructure}`);
-    const data = await promise.text();
-    console.log(data);
-    return data;
-}
+// const MadLib = async (madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/MadLib/MadLibStory/${madLibNoun}/${madLibAnimal}/${madLibName}/${madLibDifferentName}/${madLibEmotion}/${madLibAction}/${madLibJob}/${madLibStructure}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
+
+
+// NumberReverseItGoBtn.addEventListener('click', async () => {
+//     reverseItNum = NumberReverseItUserField.value;
+//     ReverseItNumber(reverseItNum);
+//     NumberReverseItText.innerText = await ReverseItNumber(reverseItNum);
+// })
+
+// const ReverseItNumber = async (reverseItNum) => {
+//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/NumberReverse/NumberReverseIt/${reverseItNum}`);
+//     const data = await promise.text();
+//     console.log(data);
+//     return data;
+// }
 
 
 
+
+
+//change these to async when you get the chance to alter the inner text
 // RestaurantFastFoodBtn.addEventListener('click', () => {
 //    RestaurantPicker('fast food');
 // })
