@@ -608,6 +608,15 @@
   .bg-\[url\(\/Assets\/AllForOneHome\.jpg\)\] {
     background-image: url(/Assets/AllForOneHome.jpg);
   }
+  .bg-\[url\(\/Assets\/AllForOneMadLibjpg\)\] {
+    background-image: url(/Assets/AllForOneMadLibjpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneMadlib\.jpg\)\] {
+    background-image: url(/Assets/AllForOneMadlib.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOneMadlibjpg\)\] {
+    background-image: url(/Assets/AllForOneMadlibjpg);
+  }
   .bg-\[url\(\/Assets\/AllForOneOdd\.jpg\)\] {
     background-image: url(/Assets/AllForOneOdd.jpg);
   }
@@ -628,6 +637,9 @@
   }
   .bg-\[url\(\/Assets\/AllForOneguess\.jpg\)\] {
     background-image: url(/Assets/AllForOneguess.jpg);
+  }
+  .bg-\[url\(\/Assets\/AllForOnejpg\)\] {
+    background-image: url(/Assets/AllForOnejpg);
   }
   .bg-cover {
     background-size: cover;

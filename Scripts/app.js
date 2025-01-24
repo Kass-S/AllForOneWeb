@@ -34,6 +34,17 @@ const OddEvenUserField = document.getElementById("OddEvenUserField");
 const OddEvenGoBtn = document.getElementById("OddEvenGoBtn");
 const OddEvenText = document.getElementById("OddEvenText");
 
+const MadLibNounUserField = document.getElementById("MadLibNounUserField");
+const MadLibAnimalUserField = document.getElementById("MadLibAnimalUserField");
+const MadLibNameUserField = document.getElementById("MadLibNameUserField");
+const MadLibDifferentNameUserField = document.getElementById("MadLibDifferentNameUserField");
+const MadLibEmotionUserField = document.getElementById("MadLibEmotionUserField");
+const MadLibActionUserField = document.getElementById("MadLibActionUserField");
+const MadLibJobUserField = document.getElementById("MadLibJobUserField");
+const MadLibStructureUserField = document.getElementById("MadLibStructureUserField");
+const MadLibGoBtn = document.getElementById("MadLibGoBtn");
+const MadLibText = document.getElementById("MadLibText");
+
 const RestaurantFastFoodBtn = document.getElementById("RestaurantFastFoodBtn");
 const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
@@ -43,7 +54,15 @@ let addNum1;
 let addNum2;
 let nameQuestion;
 let timeQuestion;
-let oddEvenInput = 'default';
+let oddEvenInput;
+let madLibNoun;
+let madLibAnimal;
+let madLibName;
+let madLibDifferentName;
+let madLibEmotion;
+let madLibAction;
+let madLibJob;
+let madLibStructure;
 let restaurantChoice;
 
 
@@ -105,7 +124,25 @@ let restaurantChoice;
 // }
 
 
+MadLibGoBtn.addEventListener('click', async () => {
+    madLibNoun = MadLibNounUserField.value;
+    madLibAnimal = MadLibAnimalUserField.value;
+    madLibName = MadLibNameUserField.value;
+    madLibDifferentName = MadLibDifferentNameUserField.value;
+    madLibEmotion = MadLibEmotionUserField.value;
+    madLibAction = MadLibActionUserField.value;
+    madLibJob = MadLibJobUserField.value;
+    madLibStructure = MadLibStructureUserField.value;
+    MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
+    MadLibText.innerText = await MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
+})
 
+const MadLib = async (madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure) => {
+    const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/MadLib/MadLibStory/${madLibNoun}/${madLibAnimal}/${madLibName}/${madLibDifferentName}/${madLibEmotion}/${madLibAction}/${madLibJob}/${madLibStructure}`);
+    const data = await promise.text();
+    console.log(data);
+    return data;
+}
 
 
 
