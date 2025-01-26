@@ -16,17 +16,6 @@ const RestaurantPickerPathBtn = document.getElementById("RestaurantPickerPathBtn
 
 
 
-
-
-const NameQuestionUserField = document.getElementById("NameQuestionUserField");
-const TimeQuestionUserField = document.getElementById("TimeQuestionUserField");
-const AskingQuestionsGoBtn = document.getElementById("AskingQuestionsGoBtn");
-const AskingQuestionsText = document.getElementById("AskingQuestionsText");
-
-const OddEvenUserField = document.getElementById("OddEvenUserField");
-const OddEvenGoBtn = document.getElementById("OddEvenGoBtn");
-const OddEvenText = document.getElementById("OddEvenText");
-
 const MadLibNounUserField = document.getElementById("MadLibNounUserField");
 const MadLibAnimalUserField = document.getElementById("MadLibAnimalUserField");
 const MadLibNameUserField = document.getElementById("MadLibNameUserField");
@@ -60,10 +49,6 @@ const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
 
 
-
-let nameQuestion;
-let timeQuestion;
-let oddEvenInput;
 let madLibNoun;
 let madLibAnimal;
 let madLibName;
@@ -84,38 +69,6 @@ let restaurantChoice;
     
 // })
 
-
-
-
-
-
-
-
-// AskingQuestionsGoBtn.addEventListener('click', async () => {
-//     nameQuestion = NameQuestionUserField.value;
-//     timeQuestion = TimeQuestionUserField.value;
-//     AskingQuestionsText.innerText = await AskingQuestions(nameQuestion, timeQuestion);
-// })
-
-// const AskingQuestions = async (question1, question2) => {
-//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/AskingQuestions/Asking/${question1}/${question2}`);
-//     const data = await promise.text();
-//     console.log(data);
-//     return data;
-// }
-
-
-// OddEvenGoBtn.addEventListener('click', async () => {
-//     oddEvenInput = OddEvenUserField.value;
-//     OddEvenText.innerText = await OddOrEven(oddEvenInput);
-// })
-
-// const OddOrEven = async (oddEvenInput) => {
-//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/OddEven/OddEvenAnswer/${oddEvenInput}`);
-//     const data = await promise.text();
-//     console.log(data);
-//     return data;
-// }
 
 
 // MadLibGoBtn.addEventListener('click', async () => {
