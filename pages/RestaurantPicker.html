@@ -6,19 +6,29 @@
     <title>Restaurant Picker</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="bg-[url(/Assets/AllForOneRestaurant.jpg)] bg-no-repeat bg-cover">
+<body class="bg-[url(/Assets/AllForOneRestaurant.jpg)] bg-no-repeat bg-cover bg-center mb-10">
     
-    <a href="../index.html" class="font-inder">Back</a>
+    <button class="font-inder text-3xl m-5"><a href="../index.html" class="">Back</a></button>
     
-    <div class="font-inder bg-green-600/90">
-        <button id="RestaurantFastFoodBtn" class="">Fast Food</button>
-        <button id="RestaurantPizzaBtn" class="">Pizza</button>
-        <button id="RestaurantFoodTruckBtn" class="">Food Truck</button>
+    <div class="font-inder bg-green-600/90 grid mx-50 mt-10 grid-cols53 grid-rows-7 rounded-3xl mr-160">
+
+        <p class="text-3xl flex justify-center my-5 col-span-5">Restaurant Picker</p>
+
+        <p id="RestaurantText" class="flex justify-center align-middle text-2xl col-span-[5] row-[3]">Choose a Catagory</p>
+
+        <button id="RestaurantFastFoodBtn" class="text-2xl bg-white border-3 col-[3] row-[4] rounded-2xl m-3 cursor-pointer">Fast Food</button>
+
+        <button id="RestaurantPizzaBtn" class="text-2xl bg-white border-3 col-[3] row-[5] rounded-2xl m-3 cursor-pointer">Pizza</button>
+
+        <button id="RestaurantFoodTruckBtn" class="text-2xl bg-white border-3 col-[3] row-[6] rounded-2xl m-3 cursor-pointer">Food Truck</button> 
+
+        <a id="RestaurantAgainBtn" href="" class="hidden">Go Again</a>
+
     </div>
     
 
     
-    <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/RestaurantPicker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
