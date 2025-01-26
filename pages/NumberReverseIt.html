@@ -6,21 +6,27 @@
     <title>Reverse It Numbers</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body class="bg-[url(/Assets/AllForOneReverseIt.jpg)] bg-no-repeat bg-cover">
+<body class="bg-[url(/Assets/AllForOneReverseIt.jpg)] bg-no-repeat bg-cover bg-center mb-30">
     
-    <a href="../index.html" class="font-inder">Back</a>
+    <button class="font-inder text-3xl m-5"><a href="../index.html" class="">Back</a></button>
 
-    <div class="font-inder bg-white/70">
-        <p class="text-3xl ">Reverse It</p>
+    <div class="font-inder bg-white/70 grid mx-80 mt-14 grid-cols-3 grid-rows-6 rounded-3xl">
+
+        <p class="text-3xl flex justify-center my-5 col-[2]">Reverse It</p>
+
         <p id="NumberReverseItText"></p>
-        <input id="NumberReverseItUserField" type="text" placeholder="Number..." class="bg-white">
-        <button id="NumberReverseItGoBtn" class="text-2xl">Go!</button>
+
+        <input id="NumberReverseItUserField" type="text" placeholder="Number..." class="bg-white border-1 col-[2] row-[3] m-3 rounded-2xl mx-10">
+
+        <button id="NumberReverseItGoBtn" class="text-2xl bg-white border-3 col-[2] row-[5] m-3 rounded-2xl mx-10 cursor-pointer">Go!</button>
+
+        <a id="NumberReverseItAgainBtn" href="" class="hidden">Go Again</a>
         
     </div>
     
 
     
-    <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/NumberReverseIt.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>

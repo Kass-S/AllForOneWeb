@@ -8,29 +8,41 @@
 </head>
 <body class="bg-[url(/Assets/AllForOneMadlib.jpg)] bg-no-repeat bg-cover">
     
-    <a href="../index.html" class="font-inder">Back</a>
+    <button class="font-inder text-3xl m-5"><a href="../index.html" class="">Back</a></button>
 
-    <div class="font-inder bg-white/70">
-        <p class="text-3xl ">Mad Lib</p>
+    <div class="font-inder bg-white/70 grid mx-50 mt-14 grid-cols-5 grid-rows-6 rounded-3xl mr-150 pb-5">
+
+        <p class="text-3xl flex justify-center my-5 col-span-5">Mad Lib</p>
+
         <p id="MadLibText"></p>
-        <div>
-            <input id="MadLibNounUserField" type="text" placeholder="Noun..." class="bg-white">
-            <input id="MadLibAnimalUserField" type="text" placeholder="Animal..." placeholder class="bg-white">
-            <input id="MadLibNameUserField" type="text" placeholder="Name..." class="bg-white">
-            <input id="MadLibDifferentNameUserField" type="text" placeholder="Different Name..." class="bg-white">
-            <input id="MadLibEmotionUserField" type="text" placeholder="Emotion..." class="bg-white">
-            <input id="MadLibActionUserField" type="text" placeholder="Action..." class="bg-white">
-            <input id="MadLibJobUserField" type="text" placeholder="Job..." class="bg-white">
-            <input id="MadLibStructureUserField" type="text" placeholder="Structure" class="bg-white">    
-        </div>
+
         
-        <button id="MadLibGoBtn" class="text-2xl">Go!</button>
+        <input id="MadLibNounUserField" type="text" placeholder="Noun..." class="bg-white border-1 col-start-2 col-end-4 row-[2] m-3 rounded-2xl mr-30">
+
+        <input id="MadLibAnimalUserField" type="text" placeholder="Animal..." placeholder class="bg-white border-1 col-start-3 col-end-5 row-[2] m-3 rounded-2xl ml-30">
+
+        <input id="MadLibNameUserField" type="text" placeholder="Name..." class="bg-white border-1 col-start-2 col-end-4 row-[3] m-3 rounded-2xl mr-30">
+
+        <input id="MadLibDifferentNameUserField" type="text" placeholder="Different Name..." class="bg-white border-1 col-start-3 col-end-5 row-[3] m-3 rounded-2xl ml-30">
+
+        <input id="MadLibEmotionUserField" type="text" placeholder="Emotion..." class="bg-white border-1 col-start-2 col-end-4 row-[4] m-3 rounded-2xl mr-30">
+
+        <input id="MadLibActionUserField" type="text" placeholder="Action..." class="bg-white border-1 col-start-3 col-end-5 row-[4] m-3 rounded-2xl ml-30">
+
+        <input id="MadLibJobUserField" type="text" placeholder="Job..." class="bg-white border-1 col-start-2 col-end-4 row-[5] m-3 rounded-2xl mr-30">
+
+        <input id="MadLibStructureUserField" type="text" placeholder="Structure" class="bg-white border-1 col-start-3 col-end-5 row-[5] m-3 rounded-2xl ml-30">  
+
+        
+        <button id="MadLibGoBtn" class="text-2xl bg-white col-start-2 col-end-5 row-[6] rounded-2xl border-3 m-3 mx-30 cursor-pointer">Go!</button>
+
+        <a id="MadLibAgainBtn" href="" class="hidden">Go Again</a>
         
     </div>
     
 
     
-    <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/MadLib.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>

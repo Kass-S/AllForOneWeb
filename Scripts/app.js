@@ -16,25 +16,6 @@ const RestaurantPickerPathBtn = document.getElementById("RestaurantPickerPathBtn
 
 
 
-const MadLibNounUserField = document.getElementById("MadLibNounUserField");
-const MadLibAnimalUserField = document.getElementById("MadLibAnimalUserField");
-const MadLibNameUserField = document.getElementById("MadLibNameUserField");
-const MadLibDifferentNameUserField = document.getElementById("MadLibDifferentNameUserField");
-const MadLibEmotionUserField = document.getElementById("MadLibEmotionUserField");
-const MadLibActionUserField = document.getElementById("MadLibActionUserField");
-const MadLibJobUserField = document.getElementById("MadLibJobUserField");
-const MadLibStructureUserField = document.getElementById("MadLibStructureUserField");
-const MadLibGoBtn = document.getElementById("MadLibGoBtn");
-const MadLibText = document.getElementById("MadLibText");
-
-const NumberReverseItUserField = document.getElementById("NumberReverseItUserField");
-const NumberReverseItGoBtn = document.getElementById("NumberReverseItGoBtn");
-const NumberReverseItText = document.getElementById("NumberReverseItText");
-
-const AlphnumericReverseItUserField = document.getElementById("AlphnumericReverseItUserField");
-const AlphnumericReverseItGoBtn = document.getElementById("AlphnumericReverseItGoBtn");
-const AlphnumericReverseItText = document.getElementById("AlphnumericReverseItText");
-
 const GreaterLessUserField1 = document.getElementById("GreaterLessUserField1");
 const GreaterLessUserField2 = document.getElementById("GreaterLessUserField2");
 const GreaterLessGoBtn = document.getElementById("GreaterLessGoBtn");
@@ -49,16 +30,6 @@ const RestaurantPizzaBtn = document.getElementById("RestaurantPizzaBtn");
 const RestaurantFoodTruckBtn = document.getElementById("RestaurantFoodTruckBtn");
 
 
-let madLibNoun;
-let madLibAnimal;
-let madLibName;
-let madLibDifferentName;
-let madLibEmotion;
-let madLibAction;
-let madLibJob;
-let madLibStructure;
-let reverseItNum;
-let reverseItString;
 let greaterLessNum1;
 let greaterLessNum2;
 let magic8Input;
@@ -69,52 +40,6 @@ let restaurantChoice;
     
 // })
 
-
-
-// MadLibGoBtn.addEventListener('click', async () => {
-//     madLibNoun = MadLibNounUserField.value;
-//     madLibAnimal = MadLibAnimalUserField.value;
-//     madLibName = MadLibNameUserField.value;
-//     madLibDifferentName = MadLibDifferentNameUserField.value;
-//     madLibEmotion = MadLibEmotionUserField.value;
-//     madLibAction = MadLibActionUserField.value;
-//     madLibJob = MadLibJobUserField.value;
-//     madLibStructure = MadLibStructureUserField.value;
-//     MadLibText.innerText = await MadLib(madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure);
-// })
-
-// const MadLib = async (madLibNoun, madLibAnimal, madLibName, madLibDifferentName, madLibEmotion, madLibAction, madLibJob, madLibStructure) => {
-//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/MadLib/MadLibStory/${madLibNoun}/${madLibAnimal}/${madLibName}/${madLibDifferentName}/${madLibEmotion}/${madLibAction}/${madLibJob}/${madLibStructure}`);
-//     const data = await promise.text();
-//     console.log(data);
-//     return data;
-// }
-
-
-// NumberReverseItGoBtn.addEventListener('click', async () => {
-//     reverseItNum = NumberReverseItUserField.value;
-//     NumberReverseItText.innerText = await ReverseItNumber(reverseItNum);
-// })
-
-// const ReverseItNumber = async (reverseItNum) => {
-//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/NumberReverse/NumberReverseIt/${reverseItNum}`);
-//     const data = await promise.text();
-//     console.log(data);
-//     return data;
-// }
-
-
-// AlphnumericReverseItGoBtn.addEventListener('click', async () => {
-//     reverseItString = AlphnumericReverseItUserField.value;
-//     AlphnumericReverseItText.innerText = await ReverseItAlphnumeric(reverseItString);
-// })
-
-// const ReverseItAlphnumeric = async (reverseItString) => {
-//     const promise = await fetch(`https://kspacekallforone-hfdea4h9dre7adfd.westus-01.azurewebsites.net/StringReverse/ReverseIt/${reverseItString}`);
-//     const data = await promise.text();
-//     console.log(data);
-//     return data;
-// }
 
 
 // GreaterLessGoBtn.addEventListener('click', async () => {
