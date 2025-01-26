@@ -8,20 +8,25 @@
 </head>
 <body class="bg-[url(/Assets/AllForOneAdd2Nums.jpg)] bg-no-repeat bg-cover">
     
-    <a href="../index.html" class="font-inder">Back</a>
+    <button class="font-inder text-3xl m-5"><a href="../index.html" class="">Back</a></button>
 
-    <div class="font-inder bg-white/70">
-        <p class="text-3xl ">Add 2 Numbers</p>
+    <div class="font-inder bg-white/70 grid mx-50 mt-14 grid-cols-5 grid-rows-6 rounded-3xl mr-150">
+        <p class="text-3xl 3xl flex justify-center my-5 col-span-5">Add 2 Numbers</p>
         <p id="AddNumbersText"></p>
-        <input id="AddNumbersUserField1" type="text" placeholder="1st number here..." class="bg-white">
-        <input id="AddNumbersUserField2" type="text" placeholder="2nd number here..." class="bg-white">
-        <button id="AddNumbersGoBtn" class="text-2xl">Add!</button>
+
+        <input id="AddNumbersUserField1" type="text" placeholder="1st number here..." class="bg-orange-200 border-1 col-start-2 col-end-4 row-[3] m-3 rounded-2xl mr-20">
+
+        <input id="AddNumbersUserField2" type="text" placeholder="2nd number here..." class="bg-orange-200 border-1 col-start-3 col-end-5 row-[3] m-3 rounded-2xl ml-20">
+
+        <button id="AddNumbersGoBtn" class="text-2xl bg-orange-300 border-3 col-start-2 col-end-5 row-[5] m-3 mx-30 rounded-2xl cursor-pointer">Add!</button>
+
+        <a id="AddNumbersAgainBtn" href="" class="hidden">Go Again</a>
         
     </div>
     
 
     
-    <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/Add2Numbers.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
