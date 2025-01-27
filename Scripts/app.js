@@ -29,5 +29,4 @@ PlayBtn.addEventListener('click', () => {
     RestaurantPickerPathBtn.className = "flex justify-center align-middle col-[2] my-5 bg-amber-50 rounded-2xl border-amber-950 border-3 py-4 mx-6";
     TitleText.className = "hidden";
     PlayBtn.className = "hidden";
-
 })
