@@ -1035,6 +1035,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .sm\:grid-rows-4 {
+    @media (width >= 40rem) {
+      grid-template-rows: repeat(4, minmax(0, 1fr));
+    }
+  }
   .sm\:gap-x-30 {
     @media (width >= 40rem) {
       column-gap: calc(var(--spacing) * 30);
@@ -1043,6 +1048,11 @@
   .sm\:bg-cover {
     @media (width >= 40rem) {
       background-size: cover;
+    }
+  }
+  .sm\:bg-top {
+    @media (width >= 40rem) {
+      background-position: top;
     }
   }
   .sm\:text-2xl {
