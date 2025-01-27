@@ -529,6 +529,9 @@
   .invisible {
     visibility: hidden;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
